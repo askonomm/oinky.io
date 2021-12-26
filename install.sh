@@ -10,13 +10,15 @@ else
   chmod +x oinky
 fi
 
+local="false"
+
 while [[ "$#" -gt 0 ]]; do
   case $1 in
-    -g|--global) global="true"; shift ;;
+    -l|--local) local="true"; shift ;;
   esac
   shift
 done
 
-if [ "$global" == "true" ]; then
+if [ "$local" == "false" ]; then
   sudo mv oinky /usr/local/bin/oinky
 fi
