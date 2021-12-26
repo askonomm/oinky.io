@@ -71,6 +71,7 @@ code {
 }
 
 .header .right a {
+    font-weight: 400;
     margin-left: 20px;
 }
 
@@ -151,6 +152,9 @@ code {
 
 .docs .menu ul {
     list-style: none;
+    position: sticky;
+    top: 100px;
+    left: 0;
     margin-top: -5px;
 }
 
@@ -178,6 +182,10 @@ code {
     margin-bottom: 25px;
 }
 
+.docs .content .entry a {
+    color: #ff204a;
+}
+
 .docs .content .entry h2 {
     font-size: 21px;
     font-weight: 600;
@@ -185,8 +193,19 @@ code {
     margin-bottom: 25px;
 }
 
+.docs .content .entry h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
 .docs .content .entry p {
     margin-bottom: 25px;
+}
+
+.docs .content .entry strong {
+    font-weight: 600;
 }
 
 .docs .content .entry code {
@@ -212,4 +231,12 @@ code {
 .docs .content .entry pre code {
     border: 0;
     padding: 0;
+}
+
+.docs .content .entry ul {
+    margin-left: 20px;
+}
+
+.docs .content .entry > ul {
+    margin-bottom: 25px;
 }
