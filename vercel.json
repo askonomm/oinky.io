@@ -2,7 +2,8 @@
     "redirects": [
         {
           "source": "/install", 
-          "destination": "https://raw.githubusercontent.com/askonomm/oinky/master/install.sh" 
+          "destination": "https://raw.githubusercontent.com/askonomm/oinky/master/install.sh" ,
+          "permanent": true
         }
     ]
 }
