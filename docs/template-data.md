@@ -1,5 +1,5 @@
 ---
-title: Creating data
+title: Template data
 layout: docs
 order: 7
 ---
