@@ -4,7 +4,7 @@ layout: docs
 order: 3
 ---
 
-While you can create as much [content](/docs/content) as you want without specifying a layout for the content items, and you can use that content in all of your [pages](/docs/pages), [partials](/docs/partials) and layouts using [data generation](/docs/generate-data), if your goal is to create Markdown content that would end up as individual web pages then you want to attach a layout to that Markdown content.
+While you can create as much [content](/docs/content) as you want without specifying a layout for the content items, and you can use that content in all of your [pages](/docs/pages), [partials](/docs/partials) and layouts using [data creation](/docs/creating-data), if your goal is to create Markdown content that would end up as individual web pages then you want to attach a layout to that Markdown content.
 
 ## What is a layout?
 
