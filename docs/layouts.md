@@ -4,7 +4,7 @@ layout: docs
 order: 3
 ---
 
-While you can create as much [content](/docs/content) as you want without specifying a layout for the content items, and you can use that content in all of your [pages](/docs/pages), [partials](/docs/partials) and layouts using [template data](/docs/template-data), if your goal is to create Markdown content that would end up as individual web pages then you want to attach a layout to that Markdown content.
+While you can create as much [content](/docs/content) as you want without specifying a layout for the content items, and you can use that content in all of your [pages](/docs/pages), [partials](/docs/partials) and layouts using [templating data](/docs/templating-data), if your goal is to create Markdown content that would end up as individual web pages then you want to attach a layout to that Markdown content.
 
 ## What is a layout?
 
@@ -46,4 +46,4 @@ Secondly, you notice we have things like `{{format_date}}` which takes two argum
 
 Thirdly, you see use of `meta.*` and `entry` and so on - where do these things come from and what exactly they are? Well, if you go back to reading about [content](/docs/content), you'll quickly realize that all of those `meta.*` things are actually just your Markdown meta-data, and the `entry` is the Markdown content. The reason why we use 3 curly brackets on each side for Markdown is so that it would render the HTML instead of displaying it. 
 
-To know more about what data is available in all of your layouts, [partials](/docs/partials) and [pages](/docs/pages), check out [template data](/docs/template-data).
+To know more about what data is available in all of your layouts, [partials](/docs/partials) and [pages](/docs/pages), check out [templating data](/docs/templating-data).
