@@ -15,6 +15,8 @@ date: 1992-09-17
 Hi there, **world**.
 ```
 
+Stand-alone Markdown content can be a nice way to create data that you can then use in your [partials](/docs/partials) and [pages](/docs/pages) by [generating dynamic templating data](/docs/templating-data), but if you wanted to a Markdown content file itself a page then I recommend you read about [layouts](/docs/layouts) which are specifically meant to help you add a layout to each Markdown content file and then design that layout however you wish to display your content.
+
 ## Meta-data
 
 In the top of the file, between three hyphens (-), sits meta-data. Each meta-data item is separated from other meta-data items by a line break, and within each meta-data item there are two things: keys and values. In the above example a key would be either `title` or `date`, and the value for each would be `Hello, world` and `1992-09-17`, respectively. Keys and values are separated by a colon character (:). You can have as much meta-data as you wish.
