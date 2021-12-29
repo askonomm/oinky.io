@@ -16,7 +16,7 @@ You see? All Oinky does is just remove the `.hbs` extension from the file, and s
 
 ## Creating a blog page
 
-A good continuation from the previous explanation would be to create a blog page. Let's say that we want to list all our blog posts from the `blog` directory, and we want them all to be listed on `website.com/posts` URL. Well, we'd get started by creating our `content.json` file and adding somtehing like this:
+A good continuation from the previous explanation would be to create a blog page. Let's say that we want to list all our blog posts from the `blog` directory, and we want them all to be listed on `website.com/posts` URL. Well, we'd get started by creating our `content.json` file and this:
 
 ```json
 [
