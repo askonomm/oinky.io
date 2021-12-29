@@ -11,7 +11,7 @@ No matter if you are inside of a [partial](/docs/partials), a [layout](/docs/lay
 Pre-set data is data that is always there, regardless if you create your own data or not. This data is as follows:
 
 - `meta.{key}` - Meta-data for the currently in-scope [content](/docs/content)
-- `entry` HTML entry for the currently in-scope [content](/docs/content) or [page](/docs/pages)
+- `entry` - HTML entry for the currently in-scope [content](/docs/content) or [page](/docs/pages)
 - `slug` - URL slug for the currently in-scope [content](/docs/content) or [page](/docs/pages)
 - `path` - full location path for the currently in-scope [content](/docs/content) or [page](/docs/pages)
 - `time_to_read` - Time to read (in minutes) for the currently in-scope [content](/docs/content) or [page](/docs/pages)
@@ -58,7 +58,7 @@ An example, full usage of the file would look like this:
 ]
 ```
 
-In the above example what happens is that Oinky will create variables named `blog_posts` and `blog_archive`, which you can then access in your Handlebars templates as `content.blog_posts` and `content.blog_archive`. Yup, just prepending the word `content` to it with a dot (.) delimiter.
+In the above example what happens is that Oinky will create variables named `blog_posts` and `blog_archive`, which you can then access in your [partials](/docs/partials), [layouts](/docs/layouts) and [pages](/docs/pages) as `content.blog_posts` and `content.blog_archive`. Yup, just prepending the word `content` to it with a dot (.) delimiter.
 
 ### `name` (required)
 

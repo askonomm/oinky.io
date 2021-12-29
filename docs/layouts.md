@@ -4,7 +4,7 @@ layout: docs
 order: 3
 ---
 
-While you can create as much [content](/docs/content) as you want without specifying a layout for the content items, and you can use that content in all of your [pages](/docs/pages), [partials](/docs/partials) and layouts using [templating data](/docs/templating-data), if your goal is to create Markdown content that would end up as individual web pages then you want to attach a layout to that Markdown content.
+You can create as much [content](/docs/content) as you want without specifying a layout for the content items, and you can use that content in all of your [pages](/docs/pages), [partials](/docs/partials) and layouts using dynamically generated [templating data](/docs/templating-data). But, if your goal is to create Markdown content that would end up as individual web pages, such as blog posts, content pages, and so on, then you want to attach a layout to that Markdown content.
 
 ## What is a layout?
 
@@ -40,10 +40,14 @@ Now let's go ahead and create a `post.hbs` file inside of the special `_layouts/
 {{>footer}}
 ```
 
-There's a lot of things happening in that Handlebars layout file, so let's break it down. Firstly, you notice words wrapped within curly brackets, two of them on each side - those signify rendering things in Handlebars. For more precice info on Handlebars, I recommend you go read the [Handlebars website](https://handlebarsjs.com/guide/). But for now all you need to know is that anything that starts with a right arrow, like `{{>header}}` is a [partial](/docs/partials), which allows you to include other Handlebars files inside your Handlebars files, thus making components reusable and easier to maintain.
+There's a lot of things happening in that Handlebars layout file, so let's break it down. 
 
-Secondly, you notice we have things like `{{format_date}}` which takes two arguments - the date, and a format. What it does is self-explanatory in that it formats the given date with the given format, but we call these things [helpers](/docs/helpers), and we have a few of them, so definitely [go check them out](/docs/helpers).
+**Firstly**, you notice words wrapped within curly brackets, two of them on each side - those signify rendering things in Handlebars. For more precice info on Handlebars, I recommend you go read the [Handlebars website](https://handlebarsjs.com/guide/). But for now all you need to know is that anything that starts with a right arrow, like `{{>header}}` is a [partial](/docs/partials), which allows you to include other Handlebars files inside your Handlebars files, thus making components reusable and easier to maintain.
 
-Thirdly, you see use of `meta.*` and `entry` and so on - where do these things come from and what exactly they are? Well, if you go back to reading about [content](/docs/content), you'll quickly realize that all of those `meta.*` things are actually just your Markdown meta-data, and the `entry` is the Markdown content. The reason why we use 3 curly brackets on each side for Markdown is so that it would render the HTML instead of displaying it. 
+**Secondly**, you notice we have things like `{{format_date}}` which takes two arguments - the date, and a format. What it does is self-explanatory in that it formats the given date with the given format, but we call these things [helpers](/docs/helpers), and we have a few of them, so definitely [go check them out](/docs/helpers).
+
+**Thirdly**, you see use of `meta.*` and `entry` and so on - where do these things come from and what exactly they are? Well, if you go back to reading about [content](/docs/content), you'll quickly realize that all of those `meta.*` things are actually just your Markdown meta-data, and the `entry` is the Markdown content. The reason why we use 3 curly brackets on each side for `entry` is so that it would render the HTML instead of displaying it, so if you want to display it instead, use two curly brackets.
+
+---
 
 To know more about what data is available in all of your layouts, [partials](/docs/partials) and [pages](/docs/pages), check out [templating data](/docs/templating-data).

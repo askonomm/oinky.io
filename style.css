@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Inter:wght@300;400;500;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Inter:wght@300;400;500;600;800&display=swap');
 
 /** RESET */
 * {
@@ -216,9 +216,21 @@ code {
     padding: 2px 6px;
 }
 
+.docs .content .entry h2 code,
+.docs .content .entry h3 code {
+    font-size: 17px;
+    color: #fff;
+    text-shadow: 0px 1px 0px rgba(255,255,255,.25);
+    background: #ff204a;
+    border: 0;
+}
+
 .docs .content .entry pre {
     font-size: 13px;
     background: #fff;
+    box-shadow: 0px 1px 2px rgba(0,0,0,.005),
+                0px 2px 3px rgba(0,0,0,.005),
+                0px 5px 10px rgba(0,0,0,.01);
     border: 1px solid #e5e5e5;
     border-radius: 5px;
     padding-top: 10px;
@@ -238,5 +250,12 @@ code {
 }
 
 .docs .content .entry > ul {
+    margin-bottom: 25px;
+}
+
+.docs .content .entry hr {
+    border: 0;
+    border-top: 1px solid #e5e5e5;
+    margin-top: 25px;
     margin-bottom: 25px;
 }

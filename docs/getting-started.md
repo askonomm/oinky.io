@@ -4,7 +4,7 @@ layout: docs
 order: 1
 ---
 
-Oinky is a static site generator. Like most static site generators, Oinky utilizes the power of Markdown and a templating language to help you create websites with ease. But, unlike most static site generators, Oinky also allows you to create complex websites by creating data-sets from your Markdown content which you can then use in your templates. Cool, right?
+Oinky is a static site generator. Like most static site generators, Oinky utilizes the power of Markdown and a templating language to help you create websites with ease. But, unlike most static site generators, Oinky also allows you to create complex websites by [creating data-sets from your Markdown content](/docs/templating-data) which you can then use in your templates. Cool, right?
 
 ## Install
 
@@ -14,7 +14,7 @@ To get started, simply install Oinky by running the following command in your te
 curl -s -L https://oinky.io/install.sh | bash -s
 ```
 
-If you want to install Oinky only locally, then run this command instead:
+Or if you want to install Oinky only locally, then run this command instead:
 
 ```shell
 curl -s -L https://oinky.io/install.sh | bash -s -- -l
@@ -49,4 +49,4 @@ You can read more about [Markdown content here](/docs/content), and [Handlebars 
 
 When developing a website it might get annoying having to constantly run Oinky again, for that reason Oinky comes built-in with a watcher that will re-compile your website whenever it detects a change. 
 
-To run Oinky with a watcher, call it as `oinky watch`.
+To run Oinky with a watcher, call it as `oinky watch` in the directory of your project.
