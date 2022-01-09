@@ -63,6 +63,7 @@ code {
 }
 
 pre {
+    color: #999;
     background: rgba(255,255,255,.05);
     border: 1px solid rgba(255,255,255,.1);
     border-radius: 3px;
@@ -88,6 +89,12 @@ ul {
 
 li > ul {
     margin-bottom: 0;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #444;
+    margin-bottom: 25px;
 }
 
 /** SIDEBAR */
@@ -188,18 +195,6 @@ li > ul {
     color: #fff;
 }
 
-.sidebar .menu a.active:before {
-    display: block;
-    content: '';
-    width: 5px;
-    height: 5px;
-    background: #555;
-    border-radius: 100%;
-    position: absolute;
-    top: 9px;
-    left: -13px;
-}
-
 /** CONTENT */
 .content {
     float: right;
@@ -276,4 +271,27 @@ li > ul {
 .intro p {
     display: inline;
     background: rgba(255,255,255,.15);
+}
+
+/** CODE */
+.hljs-keyword {
+    color: #EA638C;
+}
+
+.hljs-title, 
+.hljs-name,
+.hljs-attr {
+    color: #EA638C;
+}
+
+.hljs-symbol {
+    color: #07ac80;
+}
+
+.hljs-string {
+    color: #c0a737;
+}
+
+.hljs-comment {
+    opacity: .35;
 }

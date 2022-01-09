@@ -33,7 +33,7 @@ Now let's go ahead and create a `post.hbs` file inside of the special `_layouts/
 
 <h1>{{meta.title}}</h1>
 
-{{format_date meta.date "%Y-%d-%m}}
+{{format_date meta.date "%Y-%d-%m"}}
 
 {{{entry}}}
 
