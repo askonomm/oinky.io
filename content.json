@@ -14,5 +14,12 @@
     {
         "name": "intro",
         "from": "intro.md"
+    },
+    {
+        "name": "release",
+        "from": "https://api.github.com/repos/askonomm/oinky/releases/latest",
+        "headers": {
+            "User-Agent": "oinkydotiowebsite"
+        }
     }
 ]
