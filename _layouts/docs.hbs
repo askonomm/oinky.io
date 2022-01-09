@@ -1,28 +1,10 @@
 {{>header}}
 
-<div class="docs">
+<div class="page">
 
-    <div class="menu">
-        
-        <ul>
-        {{#each content.docs}}
+    <h2 class="title">{{meta.title}}</h2>
 
-            <li {{#is_slug slug}} class="active" {{/is_slug}}>
-                <a href="{{slug}}">{{meta.title}}</a>
-            </li>
-
-        {{/each}}
-        </ul>
-    
-    </div>
-
-    <div class="content">
-
-        <h2 class="title">{{meta.title}}</h2>
-
-        <div class="entry">{{{entry}}}</div>
-
-    </div>
+    <div class="entry">{{{entry}}}</div>
 
 </div>
 

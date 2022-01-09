@@ -66,7 +66,9 @@ The `name` property lets Oinky know what to call this data inside your Handlebar
 
 ### `from` (required)
 
-Specifying `from` is mandatory in order for Oinky to know from which directory to read the data from. For example, let's say you want to get data from `documents/essays/general`, then you would specify `from` as that. Remember that Oinky reads this data recursively, so it will also get any content from any directories from within that directory.
+Specifying `from` is mandatory in order for Oinky to know from where to get the data from. For example, let's say you want to get data from `documents/essays/general`, then you would specify `from` as that. Remember that Oinky reads this data recursively, so it will also get any content from any directories from within that directory.
+
+If you want to only read one file, simply pass the relative path to the file instead, like `blog/hello-world.md`. 
 
 ### `order`
 

@@ -3,20 +3,43 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{#if meta.title}}{{meta.title}} - {{/if}}{{#if (eq meta.layout "docs")}}Documentation - {{/if}}Oinky</title>
+    <title>{{#if meta.title}}{{meta.title}} - {{/if}}{{#if (eq meta.layout "docs")}}Documentation - {{/if}}{{site.title}}</title>
     <link rel="stylesheet" href="/style.css">
     <script defer data-domain="oinky.io" src="https://plausible.io/js/plausible.js"></script>
 </head>
 <body>
 
-    <div class="header">
-        <div class="left">
-            <a href="/">Oinky</a>
-            <a {{#is_slug "/docs/.*"}}class="active"{{/is_slug}} href="/docs/getting-started">Documentation</a>
-        </div>
+    <div class="mobile-header">
+        <h1>
+            <a href="javascript:showSidebar();">
+                <img src="/assets/logo.svg"> 
+                <span class="name">Oinky</span>
+                <span class="version">v0.5.12</span>
+            </a>
+        </h1>
+    </div>
 
-        <div class="right">
-            <a href="https://twitter.com/askonomm">Twitter</a>
+    <div class="sidebar">
+        <h1>
+            <a href="/">
+                <img src="/assets/logo.svg"> 
+                <span class="name">Oinky</span>
+                <span class="version">v0.5.12</span>
+            </a>
+        </h1>
+
+        <div class="menu">
+            <a {{#is_slug "^/index.html$"}} class="active" {{/is_slug}} href="/">About</a>
+            <a {{#is_slug "/blog/*"}} class="active" {{/is_slug}} href="/blog">Blog</a>
             <a href="https://github.com/askonomm/oinky">GitHub</a>
         </div>
+
+        <div class="menu">
+            <h2>Docs</h2>
+            {{#each content.docs}}
+            <a {{#is_slug slug}} class="active" {{/is_slug}} href="{{slug}}">{{meta.title}}</a>
+            {{/each}}
+        </div>
     </div>
+
+    <div class="content">

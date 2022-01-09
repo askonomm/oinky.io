@@ -1,17 +1,13 @@
 {{>header}}
 
-<div class="landing">
+<!-- intro -->
+<div class="intro">
 
-    <div class="logo"></div>
-
-    <h1>Oinky</h1>
-
-    <p>A blazing fast static site generator that compiles Handlebars templates and Markdown files into a static site. Most notably enables the use of programmatic templating data generation from Markdown content which can be used within Handlebars templates to create complex websites.</p>
-
-    <h3>Install</h3>
-
-    <pre><code>curl -s -L https://oinky.io/install.sh | bash -s</code></pre>
+    <h2><span>{{content.intro.meta.title}}</span></h2>
+    
+    <div class="entry">{{{content.intro.entry}}}</div>
 
 </div>
+<!-- // intro -->
 
 {{>footer}}

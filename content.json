@@ -4,5 +4,15 @@
         "from": "docs",
         "order": "asc",
         "sort_by": "meta.order"
+    },
+    {
+        "name": "faq",
+        "from": "faq",
+        "order": "asc",
+        "sort_by": "meta.order"
+    },
+    {
+        "name": "intro",
+        "from": "intro.md"
     }
 ]
